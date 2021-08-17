@@ -9,20 +9,24 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   
+<style>
 
+.navbar-brand.abs
+    {
+        position: absolute;
+        width: auto;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+}
+</style>
   
 </head>
 
 <body>
 
-<style>
 
-.topnav-right 
-{
-  float: right;
-}
-
-</style>
 
 <div class="container">
 
@@ -33,24 +37,32 @@
 
 </div> 
 
-<div class="col-sm-8 .topnav-right ">
+<div class="col-sm-8 topnav-right ">
 
-<nav class="navbar navbar-expand-sm bg-light navbar-light">
-  <ul class="navbar-nav ">
-    <li class="nav-item active ">
-      <a class="nav-link" href="#">Link</a>
-    </li>
-    <li class="nav-item active">
-      <a class="nav-link" href="#">Link</a>
-    </li>
-    <li class="nav-item active">
-      <a class="nav-link" href="#">Link</a>
-    </li>
-    <li class="nav-item active">
-      <a class="nav-link" href="#">Link</a>
-    </li>
-  </ul>
+<nav class="navbar navbar-expand-lg">
+
+    <div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar7">
+        <ul class="navbar-nav ml-auto flex-nowrap navbar-brand">
+            <li class="nav-item">
+                <a href="#" class="nav-link">Settings</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Support</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Basic Subscription</a> 
+					 <div class="progress">
+					 <div class="progress-bar" style="width:70%">70%</div>
+					 </div> 
+				
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Your Store Name</a>
+            </li>
+        </ul>
+    </div>
 </nav>
+
 </div> 
 
 </div>
